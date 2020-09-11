@@ -1,0 +1,55 @@
+.main-nav {
+  display: block;
+}
+
+.main-nav__toggle {
+  display: none;
+  width: 24px;
+  height: 12px;
+  background-image: url("../img/Burger.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 12px;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.main-nav__wrapper {
+  display: block;
+  padding-top: 45px;
+  padding-right: 70px;
+}
+
+.main-nav__list {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 33px;
+
+}
+
+.main-nav__item-elem {
+  display: block;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $header-color;
+  letter-spacing: 1.5px;
+}

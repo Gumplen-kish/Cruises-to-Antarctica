@@ -1,9 +1,46 @@
-#page-header {
-  display: block;
-  height: 500px;
-  background-color: red;
+.page-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1366px;
+  height: 650px;
+  margin: 0 auto;
+  background-image: url("../img/preview-desctop.png");
+  background-repeat: no-repeat;
+  background-size: 1366px 650px;
 }
 
+.page-header__preview {
+  position: absolute;
+  content: "";
+  top: 215px;
+  left: 200px;
+  display: block;
+  color: $header-color;
+}
 
+.page-header__preview-title {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 66px;
+  letter-spacing: 3.2px;
+}
 
+.page-header__preview-text {
+  margin-top: 11px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1.65px;
+}
 
+.page-header__logo {
+  display: block;
+  width: 77px;
+  height: 38px;
+  padding-left: 103px;
+  padding-top: 35px;
+}
