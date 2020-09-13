@@ -23,10 +23,10 @@
           <a class="main-nav__item-elem" href="#advantages">Преимущества</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__item-elem" href="#">Направления</a>
+          <a class="main-nav__item-elem" href="#directions">Направления</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__item-elem" href="#">Ближайшие круизы</a>
+          <a class="main-nav__item-elem" href="#booking">Ближайшие круизы</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__item-elem" href="#">Контакты</a>
@@ -61,6 +61,80 @@
           <p class="advantages-wrapper__item-text advantages-wrapper__item-text--boat">Экскурсионные туры к берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac в сопровождении опытных экскурсоводов.</p>
         </li>
       </ul>
+    </section>
+    <section class="directions-wrapper">
+      <h1 class="directions-wrapper__title"><a name="directions"></a>Ближайшие круизы</h1>
+      <ul class="directions-wrapper__list">
+        <li class="directions-wrapper__item">
+          <img src="img/Astoria-desctop.png" alt="Скала и лед">
+          <p class="directions-wrapper__item-text">Круиз "Астория"</p>
+        </li>
+        <li class="directions-wrapper__item">
+          <h2 class="directions-wrapper__item-title">Круиз "Элайн"</h2>
+          <p class="directions-wrapper__item-subtitle">Маршрут</p>
+          <p class="directions-wrapper__item-description">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+          <p class="directions-wrapper__item-subtitle">Порт отправления</p>
+          <p class="directions-wrapper__item-description">Буэнос-Айрес</p>
+          <p class="directions-wrapper__item-subtitle">Продолжительность</p>
+          <p class="directions-wrapper__item-description">20 дней</p>
+          <p class="directions-wrapper__item-subtitle">Цена</p>
+          <p class="directions-wrapper__item-description">от 14500$</p>
+          <button class="directions-wrapper__item-button" type="button">Забронировать</button>
+        </li>
+        <li class="directions-wrapper__item">
+          <img src="img/Atlantis-desctop.png" alt="Льдины в океане">
+          <p class="directions-wrapper__item-text">Круиз "Атлантис"</p>
+        </li>
+        <li class="directions-wrapper__item">
+          <img src="img/Odysseus-desctop.png" alt="Скалы заснежены и красивые облака">
+          <p class="directions-wrapper__item-text">Круиз "Одиссей"</p>
+        </li>
+        <li class="directions-wrapper__item">
+          <img src="img/Olympia-desctop.png" alt="Очень много пингвинов и ледник">
+          <p class="directions-wrapper__item-text">Круиз "Олимпия"</p>
+        </li>
+        <li class="directions-wrapper__item">
+          <img src="img/Aurora-desctop.png" alt="Льдины в воде и туман">
+          <p class="directions-wrapper__item-text">Круиз "Аврора"</p>
+        </li>
+        <li class="directions-wrapper__item">
+          <img src="img/Leonor-desctop.png" alt="Корабль среди заснеженых гор, в небе облачно">
+          <p class="directions-wrapper__item-text">Круиз "Леонор"</p>
+        </li>
+        <li class="directions-wrapper__item">
+          <img src="img/Minion-desctop.png" alt="Вдалеке много людей, а также вода и горы">
+          <p class="directions-wrapper__item-text">Круиз "Минион - 1"</p>
+        </li>
+      </ul>
+    </section>
+    <section class="booking-wrapper">
+      <h1 class="visually-hidden"><a name="booking"></a>Бронирование</h1>
+      <div class="booking-wrapper__discount">
+        <h2 class="booking-wrapper__discount-title">Раннее бронирование</h2>
+        <p class="booking-wrapper__discount-text">Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+      </div>
+      <div class="booking-wrapper__feedback">
+        <p class="booking-wrapper__feedback-text">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+        <ul class="booking-wrapper__feedback-list">
+          <li class="booking-wrapper__feedback-item">
+            <label class="booking-wrapper__feedback-label" for="user-name"></label>
+            <input class="booking-wrapper__feedback-input" type="text" name="user-name" value="" id="user-name" placeholder="Валерия" minlength="2" maxlength="15" required="">
+          </li>
+          <li class="booking-wrapper__feedback-item">
+            <label class="booking-wrapper__feedback-label" for="user-phone"></label>
+            <input class="booking-wrapper__feedback-input" type="number" name="user-phone" value="" id="user-phone" placeholder="89236889975" minlength="11" maxlength="11" required="">
+          </li>
+          <li class="booking-wrapper__feedback-item">
+            <label class="booking-wrapper__feedback-label" for="user-name"></label>
+            <input class="booking-wrapper__feedback-input" type="email" name="user-mail" value="" id="user-mail" placeholder="grishaewa.lera@gmail.com" required="">
+          </li>
+          <li class="booking-wrapper__feedback-item">
+            <input class="booking-wrapper__feedback-input-checkbox" type="checkbox" name="user-consent" value="" id="user-consent" required="">
+            <label class="booking-wrapper__feedback-label-checkbox" for="user-consent">Я согласен на обработку моих персональных данных</label>
+          </li>
+        </ul>
+        <button class="booking-wrapper__feedback-button" type="submit">Оставить заявку</button>
+      </div>
     </section>
   </main>
 
