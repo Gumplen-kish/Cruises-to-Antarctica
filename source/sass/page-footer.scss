@@ -1,0 +1,35 @@
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height: 138px;
+  margin-top: 120px;
+  background-color: $background-item;
+}
+
+.page-footer__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.page-footer__logo {
+  display: block;
+  width: 77px;
+  height: 38px;
+  margin-right: 40px;
+  padding-top: 50px;
+  cursor: pointer;
+}
+
+//Социальные сети
+.page-footer__social {
+  display: flex;
+  margin-left: 125px;
+}
+
+.page-footer__social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

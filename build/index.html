@@ -7,35 +7,38 @@
   <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<header class="page-header">
-  <a class="page-header__logo">
-    <img class="page-header__logo-img" src="img/Logo.svg" alt="Логотип в виде гор" width="70" height="38">
-  </a>
-  <div class="page-header__preview">
-    <p class="page-header__preview-title">Круизы в Антарктику</p>
-    <p class="page-header__preview-text">Волшебный мир айсбергов и пингвинов</p>
-  </div>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button" aria-label="Кнопка меню"></button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__item-elem" href="#advantages">Преимущества</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__item-elem" href="#directions">Направления</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__item-elem" href="#booking">Ближайшие круизы</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__item-elem" href="#">Контакты</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
 <body>
+  <iframe style="display: block" src="../img/sprite.svg"></iframe>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <svg width="70" height="38">
+        <use xlink:href="../img/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <div class="page-header__preview">
+      <p class="page-header__preview-title">Круизы в Антарктику</p>
+      <p class="page-header__preview-text">Волшебный мир айсбергов и пингвинов</p>
+    </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button" aria-label="Кнопка меню"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__item-elem" href="#advantages">Преимущества</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-elem" href="#directions">Направления</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-elem" href="#booking">Ближайшие круизы</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-elem" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   <main>
     <section class="preview">
       <h1 class="visually-hidden">Путешествие на край Земли</h1>
@@ -137,7 +140,66 @@
         <button class="booking-wrapper__feedback-button" type="submit">Оставить заявку</button>
       </div>
     </section>
+    <section class="contacts-wrapper">
+      <h1 class="visually-hidden">Контакты</h1>
+      <div class="contacts-wrapper__elem-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716329848!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1600186001229!5m2!1sru!2sru" width="560" height="306" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="contacts-wrapper__info">
+        <p class="contacts-wrapper__info-text">У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</p>
+        <p class="contacts-wrapper__info-adress">г.Санкт Петербург,ул.Большая Конюшенная, 19/8</p>
+        <p class="contacts-wrapper__info-phone">8-800-200-00-00</p>
+      </div>
+    </section>
   </main>
-
+  <footer class="page-footer">
+    <div class="page-footer__nav">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-img" src="img/Logo.svg" alt="Логотип в виде гор" width="70" height="38">
+      </a>
+      <ul class="page-footer__nav-list main-nav__list">
+        <li class="page-footer__nav-item main-nav__item">
+          <a class="page-footer__nav-item-elem main-nav__item-elem" href="#advantages">Преимущества</a>
+        </li>
+        <li class=" page-footer__nav-item main-nav__item">
+          <a class="page-footer__nav-item-elem main-nav__item-elem" href="#directions">Направления</a>
+        </li>
+        <li class="page-footer__nav-item main-nav__item">
+          <a class="page-footer__nav-item-elem main-nav__item-elem" href="#booking">Ближайшие круизы</a>
+        </li>
+        <li class="page-footer__nav-item main-nav__item">
+          <a class="page-footer__nav-item-elem main-nav__item-elem" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__social">
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--facebook" href="">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <svg width="11" height="20">
+              <use xlink:href="#"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--instagramm" href="">
+            <span class="visually-hidden">Мы в Инстаграмме</span>
+            <svg width="20" height="20">
+              <use xlink:href="../img/sprite.svg#icon-instagramm"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--twitter" href="">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <svg width="20" height="16">
+              <use xlink:href="#"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
