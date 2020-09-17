@@ -2,11 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 88px;
+  padding-top: 87px;
+  padding-bottom: 74px;
+  padding-left: 88px;
+  padding-right: 88px;
 }
 
 .directions-wrapper__title {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
   text-align: center;
   font-style: normal;
   font-weight: 600;
@@ -21,9 +24,9 @@
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+  padding-left: 30px;
+  margin-top: 0;
   list-style: none;
-  padding-left: 118px;
-  padding-right: 88px;
 }
 
 .directions-wrapper__item {

@@ -3,7 +3,7 @@
   min-height: 555px;
   flex-direction: row;
   justify-content: center;
-  margin-top: 73px;
+  align-items: center;
   background-image: url("../img/booking-background-desctop.png");
   background-repeat: no-repeat;
 }
@@ -43,52 +43,49 @@
   display: block;
   width: 403px;
   height: 455px;
-  margin-top: 50px;
   margin-left: 63px;
   background-color: $black-color;
 }
 
+.booking-wrapper__feedback-fieldset {
+  margin-left: 35px;
+  padding-bottom: 0;
+  padding-top: 0;
+  border-style: none;
+
+  &--checkbox {
+    padding-bottom: 29px;
+  }
+}
+
 .booking-wrapper__feedback-text {
-  margin-top: 44px;
-  margin-bottom: 0;
-  padding-left: 50px;
-  padding-right: 45px;
+  padding-top: 43px;
+  padding-right: 30px;
+  padding-bottom: 28px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   color: $header-color;
-  letter-spacing: 1.2px;
-}
-
-.booking-wrapper__feedback-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 10px;
-  margin-right: 42px;
-  margin-top: 27px;
-  margin-bottom: 12px;
-  list-style: none;
-}
-
-.booking-wrapper__feedback-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-bottom: 20px;
+  letter-spacing: 1.3px;
 }
 
 .booking-wrapper__feedback-input {
   display: block;
   width: 299px;
   height: 41px;
+  margin-left: 2px;
+  margin-bottom: 20px;
   background-color: $header-color;
   border-style: none;
 
   &::placeholder {
     padding-left: 15px;
     letter-spacing: 1.1px;
+  }
+
+  &::-ms-value {
+    padding-left: 15px;
   }
 }
 
@@ -97,8 +94,8 @@
 }
 
 .booking-wrapper__feedback-label-span {
-  margin-top: 3px;
-  margin-left: 22px;
+  margin-top: 0;
+  margin-left: 25px;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -116,6 +113,7 @@
     position: absolute;
     content: "";
     top: 0;
+    left: 2px;
     display: block;
     width: 18px;
     height: 18px;
@@ -140,8 +138,7 @@
   display: block;
   width: 303px;
   height: 43px;
-  margin-left: 50px;
-  margin-bottom: 50px;
+  margin-left: 49px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;

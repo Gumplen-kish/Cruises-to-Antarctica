@@ -8,8 +8,6 @@
 
 .contacts-wrapper__elem-map {
   display: block;
-  width: 560px;
-  height: 306px;
   margin-left: 52px;
 }
 
@@ -17,13 +15,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
+  padding-top: 56px;
+  padding-bottom: 20px;
 }
 
 .contacts-wrapper__info-text {
   display: block;
   width: 500px;
-  margin-top: 75px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -34,8 +32,9 @@
 }
 
 .contacts-wrapper__info-adress {
-  margin-left: 28px;
-  margin-top: 14px;
+  position: relative;
+  margin-top: 15px;
+  padding-left: 24px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -44,12 +43,27 @@
   letter-spacing: 1.27px;
 }
 
+.contacts-wrapper__info-adress-svg {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -2px;
+}
+
 .contacts-wrapper__info-phone {
+  position: relative;
   margin-top: 5px;
-  margin-left: 27px;
+  padding-left: 26px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
   /* or 24px */
+}
+
+.contacts-wrapper__info-phone-svg {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: -2px;
 }
