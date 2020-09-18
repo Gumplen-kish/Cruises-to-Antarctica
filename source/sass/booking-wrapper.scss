@@ -14,7 +14,7 @@
   justify-content: center;
   flex-wrap: wrap;
   background-color: transparent;
-  padding-right: 83px;
+  padding-right: 82px;
 }
 
 .booking-wrapper__discount-title {
@@ -48,7 +48,7 @@
 }
 
 .booking-wrapper__feedback-fieldset {
-  margin-left: 35px;
+  margin-left: 36px;
   padding-bottom: 0;
   padding-top: 0;
   border-style: none;
@@ -78,6 +78,20 @@
   margin-bottom: 20px;
   background-color: $header-color;
   border-style: none;
+
+  &:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: $link-hover;
+    cursor: pointer;
+  }
 
   &::placeholder {
     padding-left: 15px;
@@ -120,6 +134,20 @@
     background-color: $header-color;
     cursor: pointer;
   }
+
+  &:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: $link-hover;
+    cursor: pointer;
+  }
 }
 
 .booking-wrapper__feedback-input-checkbox:checked + .booking-wrapper__feedback-label-checkbox::before {
@@ -131,14 +159,14 @@
   background-image: url("../img/Checkend.svg");
   background-repeat: no-repeat;
   background-size: 10px 6px;
-  border: 1px solid #101A56;
+  border: 1px solid #101a56;
 }
 
 .booking-wrapper__feedback-button {
   display: block;
   width: 303px;
   height: 43px;
-  margin-left: 49px;
+  margin-left: 50px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -148,7 +176,18 @@
   background-color: $header-color;
   border-style: none;
   letter-spacing: 0.5px;
+
+  &:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: $link-hover;
+    cursor: pointer;
+  }
 }
-
-
-

@@ -1,25 +1,30 @@
 .page-header {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  background-image: url("../img/preview-desctop.png");
+  background-repeat: no-repeat;
+  background-size: 1366px 650px;
+}
+
+.page-header__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto;
-  padding-bottom: 650px;
-  background-image: url("../img/preview-desctop.png");
-  background-repeat: no-repeat;
+  align-items: center;
 }
 
 .page-header__preview {
-  position: absolute;
-  content: "";
-  top: 215px;
-  left: 200px;
   display: block;
   color: $header-color;
+  padding-top: 197px;
+  padding-bottom: 259px;
+  padding-left: 199px;
 }
 
 .page-header__preview-title {
-  margin-bottom: 0;
+  margin: 0;
   font-weight: bold;
   font-size: 54px;
   line-height: 66px;

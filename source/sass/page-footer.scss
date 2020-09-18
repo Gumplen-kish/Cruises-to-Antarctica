@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: space-around;
   min-height: 138px;
-  margin-top: 120px;
   background-color: $background-item;
 }
 
@@ -11,13 +10,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-left: 85px;
+  padding-right: 120px;
 }
 
 .page-footer__logo {
   display: block;
   width: 77px;
   height: 38px;
-  margin-right: 40px;
+  margin-right: 37px;
   padding-top: 50px;
   cursor: pointer;
 }
@@ -25,11 +26,25 @@
 //Социальные сети
 .page-footer__social {
   display: flex;
-  margin-left: 125px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 110px;
+  padding-right: 52px;
 }
 
 .page-footer__social-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  list-style: none;
+  margin: 0;
+}
+
+.page-footer__social-item {
+  margin-right: 33px;
+}
+
+.page-footer__social-link-svg:hover {
+  stroke: rgb(25, 132, 231);
+  fill: rgb(0, 0, 0);
 }

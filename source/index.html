@@ -10,34 +10,36 @@
 <body>
   <img style="display: none" src="img/sprite.svg"></img>
   <header class="page-header">
-    <a class="page-header__logo">
-      <svg width="70" height="38">
-        <use xlink:href="img/sprite.svg#icon-logo"></use>
-      </svg>
-    </a>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <svg width="70" height="38">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Кнопка меню"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__item-elem" href="#advantages">Преимущества</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-elem" href="#directions">Направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-elem" href="#booking">Ближайшие круизы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-elem" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <div class="page-header__preview">
       <p class="page-header__preview-title">Круизы в Антарктику</p>
       <p class="page-header__preview-text">Волшебный мир айсбергов и пингвинов</p>
     </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Кнопка меню"></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__item-elem" href="#advantages">Преимущества</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-elem" href="#directions">Направления</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-elem" href="#booking">Ближайшие круизы</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-elem" href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
   </header>
   <main>
     <section class="preview">
@@ -46,7 +48,7 @@
         <h2 class="preview-wrapper__title">Путешествие на край Земли</h2>
         <p class="preview-wrapper__text">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
       </div>
-      <img class="preview-wrapper__img" src="img/penguins-desctop.png" alt="Три пингвина крупным планом" width="560" height="301">
+      <img class="preview-img" src="img/penguins-desctop.png" alt="Три пингвина крупным планом" width="560" height="301">
     </section>
     <section class="advantages-wrapper">
       <h1 class="advantages-wrapper__title"><a name="advantages"></a>Преимущества</h1>
@@ -80,42 +82,130 @@
         <li class="directions-wrapper__item">
           <img src="img/Astoria-desctop.png" alt="Скала и лед">
           <p class="directions-wrapper__item-text">Круиз "Астория"</p>
+          <div class="directions-wrapper__info">
+            <h2 class="directions-wrapper__info-title">Круиз "Астория"</h2>
+            <p class="directions-wrapper__info-subtitle">Маршрут</p>
+            <p class="directions-wrapper__info-description">Аргентина - Фолклендские острова - Антарктида</p>
+            <p class="directions-wrapper__info-subtitle">Порт отправления</p>
+            <p class="directions-wrapper__info-description">Ушуайя</p>
+            <p class="directions-wrapper__info-subtitle">Продолжительность</p>
+            <p class="directions-wrapper__info-description">11 дней</p>
+            <p class="directions-wrapper__info-subtitle">Цена</p>
+            <p class="directions-wrapper__info-description">от 11500$</p>
+            <button class="directions-wrapper__info-button" type="button">Забронировать</button>
+          </div>
         </li>
         <li class="directions-wrapper__item">
-          <h2 class="directions-wrapper__item-title">Круиз "Элайн"</h2>
-          <p class="directions-wrapper__item-subtitle">Маршрут</p>
-          <p class="directions-wrapper__item-description">Аргентина - Фолклендские острова - Антарктида - Чили</p>
-          <p class="directions-wrapper__item-subtitle">Порт отправления</p>
-          <p class="directions-wrapper__item-description">Буэнос-Айрес</p>
-          <p class="directions-wrapper__item-subtitle">Продолжительность</p>
-          <p class="directions-wrapper__item-description">20 дней</p>
-          <p class="directions-wrapper__item-subtitle">Цена</p>
-          <p class="directions-wrapper__item-description">от 14500$</p>
-          <button class="directions-wrapper__item-button" type="button">Забронировать</button>
+          <img src="img/Astoria-desctop.png" alt="Скала и лед">
+          <p class="directions-wrapper__item-text">Круиз "Элайн"</p>
+          <div class="directions-wrapper__info">
+            <h2 class="directions-wrapper__info-title">Круиз "Элайн"</h2>
+            <p class="directions-wrapper__info-subtitle">Маршрут</p>
+            <p class="directions-wrapper__info-description">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+            <p class="directions-wrapper__info-subtitle">Порт отправления</p>
+            <p class="directions-wrapper__info-description">Буэнос-Айрес</p>
+            <p class="directions-wrapper__info-subtitle">Продолжительность</p>
+            <p class="directions-wrapper__info-description">20 дней</p>
+            <p class="directions-wrapper__info-subtitle">Цена</p>
+            <p class="directions-wrapper__info-description">от 14500$</p>
+            <button class="directions-wrapper__info-button" type="button">Забронировать</button>
+          </div>
         </li>
         <li class="directions-wrapper__item">
           <img src="img/Atlantis-desctop.png" alt="Льдины в океане">
           <p class="directions-wrapper__item-text">Круиз "Атлантис"</p>
+          <div class="directions-wrapper__info">
+            <h2 class="directions-wrapper__info-title">Круиз "Атлантис"</h2>
+            <p class="directions-wrapper__info-subtitle">Маршрут</p>
+            <p class="directions-wrapper__info-description">Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</p>
+            <p class="directions-wrapper__info-subtitle">Порт отправления</p>
+            <p class="directions-wrapper__info-description">Ушуайя</p>
+            <p class="directions-wrapper__info-subtitle">Продолжительность</p>
+            <p class="directions-wrapper__info-description">15 дней</p>
+            <p class="directions-wrapper__info-subtitle">Цена</p>
+            <p class="directions-wrapper__info-description">от 14500$</p>
+            <button class="directions-wrapper__info-button" type="button">Забронировать</button>
+          </div>
         </li>
         <li class="directions-wrapper__item">
           <img src="img/Odysseus-desctop.png" alt="Скалы заснежены и красивые облака">
           <p class="directions-wrapper__item-text">Круиз "Одиссей"</p>
+          <div class="directions-wrapper__info">
+            <h2 class="directions-wrapper__info-title">Круиз "Одиссей"</h2>
+            <p class="directions-wrapper__info-subtitle">Маршрут</p>
+            <p class="directions-wrapper__info-description">Чили - Антарктида</p>
+            <p class="directions-wrapper__info-subtitle">Порт отправления</p>
+            <p class="directions-wrapper__info-description">Пунта-Аренас</p>
+            <p class="directions-wrapper__info-subtitle">Продолжительность</p>
+            <p class="directions-wrapper__info-description">13 дней</p>
+            <p class="directions-wrapper__info-subtitle">Цена</p>
+            <p class="directions-wrapper__info-description">от 9700$</p>
+            <button class="directions-wrapper__info-button" type="button">Забронировать</button>
+          </div>
         </li>
         <li class="directions-wrapper__item">
           <img src="img/Olympia-desctop.png" alt="Очень много пингвинов и ледник">
           <p class="directions-wrapper__item-text">Круиз "Олимпия"</p>
+          <div class="directions-wrapper__info">
+            <h2 class="directions-wrapper__info-title">Круиз "Олимпия"</h2>
+            <p class="directions-wrapper__info-subtitle">Маршрут</p>
+            <p class="directions-wrapper__info-description">Аргентина - Фолклендские острова - Южная Георгия - Антарктида</p>
+            <p class="directions-wrapper__info-subtitle">Порт отправления</p>
+            <p class="directions-wrapper__info-description">Ушуайя</p>
+            <p class="directions-wrapper__info-subtitle">Продолжительность</p>
+            <p class="directions-wrapper__info-description">21 дней</p>
+            <p class="directions-wrapper__info-subtitle">Цена</p>
+            <p class="directions-wrapper__info-description">от 18600$</p>
+            <button class="directions-wrapper__info-button" type="button">Забронировать</button>
+          </div>
         </li>
         <li class="directions-wrapper__item">
           <img src="img/Aurora-desctop.png" alt="Льдины в воде и туман">
           <p class="directions-wrapper__item-text">Круиз "Аврора"</p>
+          <div class="directions-wrapper__info">
+            <h2 class="directions-wrapper__info-title">Круиз "Аврора"</h2>
+            <p class="directions-wrapper__info-subtitle">Маршрут</p>
+            <p class="directions-wrapper__info-description">Аргентина - Антарктида - Чили</p>
+            <p class="directions-wrapper__info-subtitle">Порт отправления</p>
+            <p class="directions-wrapper__info-description">Ушуайя</p>
+            <p class="directions-wrapper__info-subtitle">Продолжительность</p>
+            <p class="directions-wrapper__info-description">14 дней</p>
+            <p class="directions-wrapper__info-subtitle">Цена</p>
+            <p class="directions-wrapper__info-description">от 11700$</p>
+            <button class="directions-wrapper__info-button" type="button">Забронировать</button>
+          </div>
         </li>
         <li class="directions-wrapper__item">
           <img src="img/Leonor-desctop.png" alt="Корабль среди заснеженых гор, в небе облачно">
           <p class="directions-wrapper__item-text">Круиз "Леонор"</p>
+          <div class="directions-wrapper__info">
+            <h2 class="directions-wrapper__info-title">Круиз "Леонор"</h2>
+            <p class="directions-wrapper__info-subtitle">Маршрут</p>
+            <p class="directions-wrapper__info-description">Чили - Южная Георгия - Антарктида - Аргентина</p>
+            <p class="directions-wrapper__info-subtitle">Порт отправления</p>
+            <p class="directions-wrapper__info-description">Пунта-Аренас</p>
+            <p class="directions-wrapper__info-subtitle">Продолжительность</p>
+            <p class="directions-wrapper__info-description">17 дней</p>
+            <p class="directions-wrapper__info-subtitle">Цена</p>
+            <p class="directions-wrapper__info-description">от 12500$</p>
+            <button class="directions-wrapper__info-button" type="button">Забронировать</button>
+          </div>
         </li>
         <li class="directions-wrapper__item">
           <img src="img/Minion-desctop.png" alt="Вдалеке много людей, а также вода и горы">
           <p class="directions-wrapper__item-text">Круиз "Минион - 1"</p>
+          <div class="directions-wrapper__info">
+            <h2 class="directions-wrapper__info-title">Круиз "Минион - 1"</h2>
+            <p class="directions-wrapper__info-subtitle">Маршрут</p>
+            <p class="directions-wrapper__info-description">Аргентина - Антарктида</p>
+            <p class="directions-wrapper__info-subtitle">Порт отправления</p>
+            <p class="directions-wrapper__info-description">Ушуайя</p>
+            <p class="directions-wrapper__info-subtitle">Продолжительность</p>
+            <p class="directions-wrapper__info-description">11 дней</p>
+            <p class="directions-wrapper__info-subtitle">Цена</p>
+            <p class="directions-wrapper__info-description">от 12300$</p>
+            <button class="directions-wrapper__info-button" type="button">Забронировать</button>
+          </div>
         </li>
       </ul>
     </section>
@@ -132,7 +222,7 @@
             <label class="booking-wrapper__feedback-label" for="user-name"></label>
             <input  class="booking-wrapper__feedback-input" type="text" name="user-name" value="" id="user-name" placeholder="Валерия" minlength="2" maxlength="15" required>
             <label class="booking-wrapper__feedback-label" for="user-phone"></label>
-            <input  class="booking-wrapper__feedback-input" type="number" name="user-phone" value="" id="user-phone" placeholder="89236889975" minlength="11" maxlength="11" required>
+            <input  class="booking-wrapper__feedback-input" type="tel" name="user-phone" value="" id="user-phone" placeholder="89236889975" minlength="11" maxlength="11" required>
             <label class="booking-wrapper__feedback-label" for="user-name"></label>
             <input  class="booking-wrapper__feedback-input" type="email" name="user-mail" value="" id="user-mail" placeholder="grishaewa.lera@gmail.com" required>
           </fieldset>
@@ -145,7 +235,7 @@
       </div>
     </section>
     <section class="contacts-wrapper">
-      <h1 class="visually-hidden">Контакты</h1>
+      <h1 class="visually-hidden"><a name="contacts"></a>Контакты</h1>
       <div class="contacts-wrapper__elem-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716329848!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1600186001229!5m2!1sru!2sru" width="560" height="306" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
@@ -184,24 +274,24 @@
           <a class="page-footer__nav-item-elem main-nav__item-elem" href="#booking">Ближайшие круизы</a>
         </li>
         <li class="page-footer__nav-item main-nav__item">
-          <a class="page-footer__nav-item-elem main-nav__item-elem" href="#">Контакты</a>
+          <a class="page-footer__nav-item-elem main-nav__item-elem" href="#contacts">Контакты</a>
         </li>
       </ul>
     </div>
     <div class="page-footer__social">
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link page-footer__social-link--facebook" href="">
+          <a class="page-footer__social-link page-footer__social-link--facebook" href="#top">
             <span class="visually-hidden">Мы в Фейсбуке</span>
-            <svg width="11" height="20">
-              <use xlink:href="#"></use>
+            <svg class="page-footer__social-link-svg" width="11" height="20">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
           <a class="page-footer__social-link page-footer__social-link--instagramm" href="">
             <span class="visually-hidden">Мы в Инстаграмме</span>
-            <svg width="20" height="20">
+            <svg class="page-footer__social-link-svg" width="20" height="20">
               <use xlink:href="img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
@@ -209,8 +299,8 @@
         <li class="page-footer__social-item">
           <a class="page-footer__social-link page-footer__social-link--twitter" href="">
             <span class="visually-hidden">Мы в Твиттере</span>
-            <svg width="20" height="16">
-              <use xlink:href="#"></use>
+            <svg class="page-footer__social-link-svg" width="20" height="16">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>

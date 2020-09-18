@@ -18,7 +18,7 @@
 
 .main-nav__wrapper {
   display: block;
-  padding-top: 45px;
+  padding-top: 37px;
   padding-right: 70px;
 }
 
@@ -51,4 +51,10 @@
   text-decoration: none;
   color: $header-color;
   letter-spacing: 1.5px;
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    color: $link-hover;
+  }
 }
