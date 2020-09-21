@@ -5,7 +5,7 @@
   margin: 0 auto;
   background-image: url("../img/preview-desctop.png");
   background-repeat: no-repeat;
-  background-size: 1366px 650px;
+  background-size: cover;
 }
 
 .page-header__wrapper {
@@ -13,6 +13,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-width: 1366px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .page-header__preview {
@@ -46,5 +49,6 @@
   height: 38px;
   padding-left: 103px;
   padding-top: 35px;
+  margin-right: auto;
   cursor: pointer;
 }

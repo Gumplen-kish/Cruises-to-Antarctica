@@ -1,11 +1,13 @@
 .booking-wrapper {
   display: flex;
   min-height: 555px;
+  width: 100%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-image: url("../img/booking-background-desctop.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .booking-wrapper__discount {
