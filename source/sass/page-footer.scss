@@ -23,6 +23,11 @@
   cursor: pointer;
 }
 
+.page-footer__logo-img {
+  width: 77px;
+  height: 38px;
+}
+
 //Социальные сети
 .page-footer__social {
   display: flex;
@@ -41,10 +46,101 @@
 }
 
 .page-footer__social-item {
-  margin-right: 33px;
+  margin-right: 34px;
 }
 
-.page-footer__social-link-svg:hover {
-  stroke: rgb(25, 132, 231);
-  fill: rgb(0, 0, 0);
+.page-footer__social-link-svg {
+  &--facebook {
+    width: 11px;
+    height: 20px;
+  }
+
+  &--instagramm {
+    width: 20px;
+    height: 20px;
+  }
+
+  &--twitter {
+    width: 20px;
+    height: 16px;
+  }
+
+  &:hover {
+    stroke: rgb(25, 132, 231);
+    fill: rgb(0, 0, 0);
+  }
+}
+
+@media (max-width: $table) {
+  .page-footer {
+    min-height: 120px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .page-footer__nav {
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .page-footer__logo {
+    width: 38px;
+    height: 20px;
+    margin-right: 0;
+    padding-top: 50px;
+    padding-left: 45px;
+  }
+
+  .page-footer__logo-img {
+    width: 38px;
+    height: 20px;
+    margin: 0;
+  }
+
+  .page-footer__nav-list {
+    padding-left: 20px;
+    padding-top: 52px;
+  }
+
+  .page-footer__nav-item {
+    padding-right: 0;
+    margin-right: 23px;
+  }
+
+  .page-footer__nav-item-elem {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .page-footer__social {
+    padding: 0;
+  }
+
+  .page-footer__social-list {
+    padding-left: 62px;
+    padding-top: 52px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .page-footer__social-item {
+    margin-right: 23px;
+  }
+
+  .page-footer__social-link-svg {
+    &--facebook {
+      width: 9px;
+      height: 16px;
+    }
+
+    &--instagramm {
+      width: 16px;
+      height: 16px;
+    }
+
+    &--twitter {
+      width: 16px;
+      height: 13px;
+    }
+  }
 }

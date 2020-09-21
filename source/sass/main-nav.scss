@@ -58,3 +58,24 @@
     color: $link-hover;
   }
 }
+
+@media (max-width: $table) {
+  .main-nav__wrapper {
+    padding-top: 22px;
+    padding-right: 23px;
+  }
+
+  .main-nav__list {
+    justify-content: space-around;
+  }
+
+  .main-nav__item {
+    padding-right: 23px;
+  }
+
+  .main-nav__item-elem {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1.3px;
+  }
+}
