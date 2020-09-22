@@ -1,14 +1,14 @@
 .advantages-wrapper {
   background-image: url("../img/background-of-advantages-desctop.png");
   text-align: center;
-  padding-bottom: 121px;
+  padding-bottom: 120px;
+  padding-top: 90px;
   color: $black-color;
 }
 
 .advantages-wrapper__title {
-  margin: 0;
-  padding-bottom: 48px;
-  padding-top: 111px;
+  margin-top: 20px;
+  margin-bottom: 49px;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -110,11 +110,10 @@
   .advantages-wrapper {
     background-image: url("../img/background-of-advantages-tablet.png");
     padding-bottom: 100px;
+    padding-top: 70px;
   }
 
   .advantages-wrapper__title {
-    padding-bottom: 49px;
-    padding-top: 90px;
     font-size: 26px;
     line-height: 39px;
   }
