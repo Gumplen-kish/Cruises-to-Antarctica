@@ -1,11 +1,14 @@
 .preview {
   display: flex;
+  max-width: 1366px;
+  width: 1160px;
   justify-content: flex-start;
   align-items: center;
+  margin: 0 auto;
   padding-left: 103px;
   padding-right: 103px;
-  padding-top: 120px;
-  padding-bottom: 116px;
+  padding-top: 119px;
+  padding-bottom: 117px;
   color: $black-color;
 }
 
@@ -16,7 +19,7 @@
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  margin-left: auto;
+  margin-right: 88px;
   padding-top: 22px;
   padding-bottom: 10px;
 }
@@ -46,10 +49,6 @@
   line-height: 150%;
   /* or 24px */
   letter-spacing: 1.2px;
-}
-
-.preview-wrapper__img {
-  margin-left: 88px;
 }
 
 @media (max-width: $table) {
