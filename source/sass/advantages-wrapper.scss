@@ -25,11 +25,10 @@
 }
 
 .advantages-wrapper__item {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
   max-width: 360px;
   height: 241px;
@@ -38,27 +37,26 @@
 }
 
 .advantages-wrapper__item-svg {
-  position: absolute;
-  content: "";
-  left: 30px;
+  display: block;
+  margin-left: 30px;
 
   &--ship {
-    top: 30px;
+    margin-top: 30px;
   }
 
   &--tick {
-    top: 35px;
+    margin-top: 35px;
   }
 
   &--boat {
-    top: 38px;
+    margin-top: 38px;
   }
 }
 
 .advantages-wrapper__item-title {
-  padding-top: 80px;
-  padding-bottom: 4px;
-  margin: 0;
+  margin-top: 19px;
+  margin-left: 30px;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -71,17 +69,19 @@
   }
 
   &--tick {
+    margin-top: 25px;
     padding-right: 80px;
     letter-spacing: 1.35px;
   }
 
   &--boat {
+    margin-top: 27px;
     letter-spacing: 1.65px;
   }
 }
 
 .advantages-wrapper__item-text {
-  margin-top: 8px;
+  margin-top: 0;
   padding-left: 30px;
   font-style: normal;
   font-weight: normal;
@@ -90,7 +90,6 @@
   /* or 20px */
 
   &--ship {
-    margin-top: 8px;
     padding-right: 20px;
     letter-spacing: 1px;
   }
@@ -129,34 +128,49 @@
   }
 
   .advantages-wrapper__item-svg {
-    left: 20px;
+    margin-left: 20px;
 
     &--ship {
-      top: 25px;
       width: 21px;
       height: 26px;
+      margin-top: 25px;
     }
 
     &--tick {
-      top: 29px;
       width: 33px;
       height: 19px;
+      margin-top: 30px;
     }
 
     &--boat {
-      top: 32px;
       width: 38px;
       height: 13px;
+      margin-top: 32px;
     }
   }
 
   .advantages-wrapper__item-title {
-    padding-top: 71px;
-    padding-left: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
     line-height: 25px;
 
+    &--ship {
+      padding-right: 11px;
+      letter-spacing: 1.7px;
+    }
+
     &--tick {
-      padding-right: 0;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      padding-right: 80px;
+      letter-spacing: 1.35px;
+    }
+
+    &--boat {
+      margin-top: 27px;
+      margin-bottom: 10px;
+      letter-spacing: 1.65px;
     }
   }
 

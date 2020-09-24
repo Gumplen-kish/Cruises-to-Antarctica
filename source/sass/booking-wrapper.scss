@@ -16,7 +16,7 @@
   justify-content: center;
   flex-wrap: wrap;
   background-color: transparent;
-  padding-right: 82px;
+  padding-right: 145px;
 }
 
 .booking-wrapper__discount-title {
@@ -44,40 +44,47 @@
 .booking-wrapper__feedback {
   display: block;
   width: 403px;
-  margin-left: 63px;
-  padding-bottom: 50px;
+  height: 455px;
   background-color: $black-color;
 }
 
+.booking-wrapper__feedback-form {
+  display: flex;
+
+  margin: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .booking-wrapper__feedback-fieldset {
-  margin-left: 36px;
-  padding-bottom: 0;
-  padding-top: 0;
+  margin: 0;
+  padding: 0;
   border-style: none;
 
   &--checkbox {
-    padding-bottom: 29px;
+    margin-bottom: 28px;
   }
 }
 
 .booking-wrapper__feedback-text {
-  padding-top: 43px;
-  padding-right: 30px;
-  padding-bottom: 28px;
+  padding: 0;
+  margin-bottom: 22px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   color: $header-color;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.23px;
 }
 
 .booking-wrapper__feedback-input {
   display: block;
-  width: 299px;
+  width: 303px;
   height: 41px;
-  margin-left: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  margin-right: 0;
+  padding: 0;
   background-color: $header-color;
   border-style: none;
 
@@ -111,7 +118,7 @@
 
 .booking-wrapper__feedback-label-span {
   margin-top: 0;
-  margin-left: 25px;
+  margin-left: 24px;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -166,9 +173,9 @@
 
 .booking-wrapper__feedback-button {
   display: block;
-  width: 303px;
   height: 43px;
-  margin-left: 50px;
+  padding-left: 90px;
+  padding-right: 89px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;

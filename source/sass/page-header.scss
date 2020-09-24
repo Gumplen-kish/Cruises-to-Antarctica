@@ -20,10 +20,14 @@
 
 .page-header__preview {
   display: block;
-  color: $header-color;
+  width: 637px;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-left: 200px;
+  padding-right: 530px;
   padding-top: 197px;
   padding-bottom: 259px;
-  padding-left: 199px;
+  color: $header-color;
 }
 
 .page-header__preview-title {
