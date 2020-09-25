@@ -30,7 +30,7 @@
   color: $header-color;
 }
 
-.page-header__preview-title {
+.page-header__preview h2 {
   margin: 0;
   font-weight: bold;
   font-size: 54px;
@@ -38,7 +38,7 @@
   letter-spacing: 3.2px;
 }
 
-.page-header__preview-text {
+.page-header__preview p {
   margin-top: 11px;
   font-style: normal;
   font-weight: normal;
@@ -57,7 +57,7 @@
   cursor: pointer;
 }
 
-.page-header__logo-img {
+.page-header__logo img {
   width: 77px;
   height: 38px;
 }
@@ -77,12 +77,12 @@
     padding-left: 45px;
   }
 
-  .page-header__preview-title {
+  .page-header__preview h2 {
     font-size: 50px;
     line-height: 61px;
   }
 
-  .page-header__preview-text {
+  .page-header__preview p {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 1.5px;
@@ -96,7 +96,7 @@
     padding-top: 21px;
   }
 
-  .page-header__logo-img {
+  .page-header__logo img {
     width: 38px;
     height: 20px;
   }

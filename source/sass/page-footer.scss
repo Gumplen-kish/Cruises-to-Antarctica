@@ -170,16 +170,31 @@
     &--facebook {
       width: 9px;
       height: 16px;
+
+      & svg {
+        width: 9px;
+        height: 16px;
+      }
     }
 
     &--instagramm {
       width: 16px;
       height: 16px;
+
+      & svg {
+        width: 16px;
+        height: 16px;
+      }
     }
 
     &--twitter {
       width: 16px;
       height: 13px;
+
+      & svg {
+        width: 16px;
+        height: 13px;
+      }
     }
   }
 }

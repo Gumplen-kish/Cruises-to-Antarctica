@@ -70,36 +70,44 @@
 
 @media (max-width: $table) {
   .contacts-wrapper {
+    width: 736px;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding-right: 0;
-    padding-bottom: 100px;
+    padding-bottom: 98px;
+    padding-top: 102px;
+    padding-left: 30px;
   }
 
   .contacts-wrapper__elem-map {
-    margin-top: 100px;
-    margin-left: 45px;
     margin-right: 30px;
     width: 832px;
     height: 335px;
   }
 
   .contacts-wrapper__info {
-    padding-top: 95px;
+    padding-top: 0;
   }
 
   .contacts-wrapper__info-text {
-    margin-top: 23px;
-    margin-bottom: 29px;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 
   .contacts-wrapper__info-adress {
+    display: flex;
+    flex-direction: row;
     margin-top: 0;
   }
 
-  .contacts-wrapper__info-adress-svg {
-    top: 4px;
-    left: 0;
+  .contacts-wrapper__info-adress svg {
+    width: 25px;
+    height: 22px;
+    margin-right: 10px;
+  }
+
+  .contacts-wrapper__info-phone {
+    margin-top: 0;
   }
 }
