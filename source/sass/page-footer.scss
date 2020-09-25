@@ -5,7 +5,7 @@
   width: 1366px;
   min-height: 138px;
   margin: 0 auto;
-  background-color: $background-item;
+  background-color: $black-color;
 }
 
 .page-footer__nav {
@@ -60,11 +60,6 @@
   margin-right: 37px;
   padding-top: 50px;
   cursor: pointer;
-}
-
-.page-footer__logo-img {
-  width: 77px;
-  height: 38px;
 }
 
 //Социальные сети
@@ -128,12 +123,11 @@
     margin-right: 0;
     padding-top: 50px;
     padding-left: 45px;
-  }
 
-  .page-footer__logo-img {
-    width: 38px;
-    height: 20px;
-    margin: 0;
+    & svg {
+      width: 38px;
+      height: 20px;
+    }
   }
 
   .page-footer__nav-list {
@@ -166,7 +160,7 @@
     margin-right: 23px;
   }
 
-  .page-footer__social-link-svg {
+  .page-footer__social-link {
     &--facebook {
       width: 9px;
       height: 16px;
