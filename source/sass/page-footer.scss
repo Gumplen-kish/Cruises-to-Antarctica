@@ -192,3 +192,44 @@
     }
   }
 }
+
+@media (max-width: $mobile) {
+  .page-footer {
+    max-width: 320px;
+    flex-direction: column;
+    padding-bottom: 37px;
+  }
+
+  .page-footer__logo {
+    width: 42px;
+    height: 22px;
+    padding-top: 40px;
+    padding-left: 15px;
+
+    & svg {
+      width: 42px;
+      height: 22px;
+    }
+  }
+
+  .page-footer__nav {
+    flex-direction: column;
+  }
+
+  .page-footer__nav-list {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 28px;
+    padding-left: 15px;
+  }
+
+  .page-footer__nav-item {
+    margin-bottom: 17px;
+    margin-right: 0;
+  }
+
+  .page-footer__social-list {
+    padding-left: 15px;
+    padding-top: 8px;
+  }
+}

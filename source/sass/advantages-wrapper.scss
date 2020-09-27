@@ -111,8 +111,8 @@
   }
 
   .advantages-wrapper h2 {
-    font-size: 26px;
-    line-height: 39px;
+    font-size: 24px;
+    line-height: 150%;
   }
 
   .advantages-wrapper__list {
@@ -125,7 +125,7 @@
     margin-right: 30px;
 
     & svg {
-    margin-left: 20px;
+      margin-left: 20px;
     }
 
     &--ship svg {
@@ -186,6 +186,53 @@
     &--boat p {
       padding-right: 23px;
       letter-spacing: 0.9px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .advantages-wrapper {
+    background-image: url("../img/background-of-advantages-mobile.png");
+    padding-bottom: 37px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 37px;
+
+    & h2 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .advantages-wrapper__list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .advantages-wrapper__item {
+    max-width: 290px;
+    height: 249px;
+    margin-bottom: 30px;
+    margin-right: 0;
+
+    &--ship h3 {
+      padding-right: 60px;
+      letter-spacing: 1.85px;
+    }
+
+    &--tick svg {
+      margin-top: 29px;
+    }
+
+    &--tick p {
+      padding-right: 38px;
+    }
+
+    &--boat svg {
+      margin-top: 33px;
+    }
+
+    &--boat h3 {
+      padding-right: 70px;
     }
   }
 }

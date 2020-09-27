@@ -113,3 +113,41 @@
     }
   }
 }
+
+@media (max-width: $mobile) {
+  .contacts-wrapper {
+    max-width: 320px;
+    width: 290px;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 79px;
+    padding-top: 49px;
+
+    & h3 {
+      padding-right: 15px;
+      margin-bottom: 28px;
+    }
+
+    & p {
+      margin-bottom: 20px;
+    }
+
+    & p svg {
+      width: 29px;
+    }
+
+    & a svg {
+      width: 26px;
+      margin-right: 0;
+    }
+  }
+
+  .contacts-wrapper__elem-map {
+    width: 290px;
+    height: 316px;
+    margin-left: 0;
+    margin-right: 0;
+    order: 2;
+  }
+}
