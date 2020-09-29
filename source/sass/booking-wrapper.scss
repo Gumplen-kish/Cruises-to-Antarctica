@@ -1,11 +1,13 @@
 .booking-wrapper {
   display: flex;
   min-height: 555px;
+  max-width: 1366px;
+  margin: 0 auto;
   width: 100%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/booking-background-desctop.png");
+  background-image: url("../img/booking-background-desctop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -97,6 +99,7 @@
 }
 
 .booking-wrapper__feedback-text {
+  width: 303px;
   padding: 0;
   margin-bottom: 22px;
   font-style: normal;
@@ -209,7 +212,7 @@
   .booking-wrapper {
     flex-direction: column;
     padding-bottom: 100px;
-    background-image: url("../img/booking-background-tablet.png");
+    background-image: url("../img/booking-background-tablet.jpg");
   }
 
   .booking-wrapper__discount {
@@ -239,10 +242,11 @@
   .booking-wrapper {
     max-width: 320px;
     width: 290px;
-    background-image: url("../img/booking-background-mobile.png");
+    background-image: url("../img/booking-background-mobile.jpg");
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 65px;
+    margin: 0 auto;
   }
 
   .booking-wrapper__discount {
@@ -282,6 +286,7 @@
   }
 
   .booking-wrapper__feedback-text {
+    width: 214px;
     margin-bottom: 24px;
     text-align: center;
     line-height: 25px;

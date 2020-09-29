@@ -1,9 +1,11 @@
 .page-header {
   display: flex;
+  max-width: 1366px;
+  width: 100%;
   flex-direction: column;
   justify-content: space-around;
   margin: 0 auto;
-  background-image: url("../img/preview-desctop.png");
+  background-image: url("../img/preview-desctop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -23,28 +25,28 @@
   width: 637px;
   max-width: 1366px;
   margin: 0 auto;
-  padding-left: 200px;
+  padding-left: 198px;
   padding-right: 530px;
   padding-top: 197px;
   padding-bottom: 259px;
   color: $header-color;
-}
 
-.page-header__preview h2 {
-  margin: 0;
-  font-weight: bold;
-  font-size: 54px;
-  line-height: 66px;
-  letter-spacing: 3.2px;
-}
+  & h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 66px;
+    letter-spacing: 3.2px;
+  }
 
-.page-header__preview p {
-  margin-top: 11px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 1.65px;
+  & p {
+    margin-top: 11px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.65px;
+  }
 }
 
 .page-header__logo {
@@ -64,7 +66,7 @@
 
 @media (max-width: $table) {
   .page-header {
-    background-image: url("../img/preview-tablet.png");
+    background-image: url("../img/preview-tablet.jpg");
   }
 
   .page-header__preview {
@@ -75,6 +77,8 @@
     padding-top: 209px;
     padding-bottom: 258px;
     padding-left: 45px;
+    padding-right: 0;
+    margin: 0;
 
     & h2 {
       font-size: 50px;
@@ -104,7 +108,12 @@
 
 @media (max-width: $mobile) {
   .page-header {
-    background-image: url("../img/preview-mobile.png");
+    max-width: 320px;
+    background-image: url("../img/preview-mobile.jpg");
+  }
+
+  .page-header__wrapper {
+    width: 100%;
   }
 
   .page-header__logo {
@@ -121,11 +130,13 @@
 
   .page-header__preview {
     max-width: 320px;
-    width: 235px;
+    width: 265px;
     flex-wrap: nowrap;
     padding-top: 134px;
     padding-bottom: 163px;
     padding-left: 15px;
+    padding-right: 0;
+    margin: 0;
 
     & h2 {
       font-size: 36px;
