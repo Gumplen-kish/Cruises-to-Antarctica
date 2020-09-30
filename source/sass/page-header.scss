@@ -109,6 +109,7 @@
 @media (max-width: $mobile) {
   .page-header {
     max-width: 320px;
+    width: 100%;
     background-image: url("../img/preview-mobile.jpg");
   }
 
@@ -126,12 +127,17 @@
       width: 42px;
       height: 22px;
     }
+
+    &--opened {
+      display: none;
+    }
   }
 
   .page-header__preview {
     max-width: 320px;
-    width: 265px;
-    flex-wrap: nowrap;
+    width: 95%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     padding-top: 134px;
     padding-bottom: 163px;
     padding-left: 15px;

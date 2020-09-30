@@ -5,17 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Круизы в Антарктику</title>
+  <link rel="preload" href="fonts/montserrat-v14-latin-500.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo">
+      <a class="page-header__logo--opened">
         <svg width="77" height="38">
           <use xlink:href="img/sprite.svg#icon-logo"></use>
         </svg>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Кнопка меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -88,8 +89,8 @@
             <source media="(max-width: 768px)" srcset="img/Astoria-tablet.jpg">
             <img src="img/Astoria-desctop.jpg" alt="Скала и лед" width="260" height="386">
           </picture>
+          <h3>Круиз "Астория"</h3>
           <div class="directions-wrapper__info">
-            <h3>Круиз "Астория"</h3>
             <h4>Маршрут</h4>
             <p>Аргентина - Фолклендские острова - Антарктида</p>
             <h4>Порт отправления</h4>
@@ -107,8 +108,8 @@
             <source media="(max-width: 768px)" srcset="img/Astoria-tablet.jpg">
             <img src="img/Astoria-desctop.jpg" alt="Скала и лед" width="260" height="386">
           </picture>
+          <h3>Круиз "Элайн"</h3>
           <div class="directions-wrapper__info">
-            <h3>Круиз "Элайн"</h3>
             <h4>Маршрут</h4>
             <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
             <h4>Порт отправления</h4>
@@ -126,8 +127,8 @@
             <source media="(max-width: 768px)" srcset="img/Atlantis-tablet.jpg">
             <img src="img/Atlantis-desctop.jpg" alt="Льдины в океане" width="260" height="386">
           </picture>
+          <h3>Круиз "Атлантис"</h3>
           <div class="directions-wrapper__info">
-            <h3>Круиз "Атлантис"</h3>
             <h4>Маршрут</h4>
             <p>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</p>
             <h4>Порт отправления</h4>
@@ -145,8 +146,8 @@
             <source media="(max-width: 768px)" srcset="img/Odysseus-tablet.jpg">
             <img src="img/Odysseus-desctop.jpg" alt="Скалы заснежены и красивые облака" width="260" height="386">
           </picture>
+          <h3>Круиз "Одиссей"</h3>
           <div class="directions-wrapper__info">
-            <h3>Круиз "Одиссей"</h3>
             <h4>Маршрут</h4>
             <p>Чили - Антарктида</p>
             <h4>Порт отправления</h4>
@@ -164,8 +165,8 @@
             <source media="(max-width: 768px)" srcset="img/Olympia-tablet.jpg">
             <img src="img/Olympia-desctop.jpg" alt="Очень много пингвинов и ледник" width="260" height="386">
           </picture>
+          <h3>Круиз "Олимпия"</h3>
           <div class="directions-wrapper__info">
-            <h3>Круиз "Олимпия"</h3>
             <h4>Маршрут</h4>
             <p>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</p>
             <h4>Порт отправления</h4>
@@ -183,8 +184,8 @@
             <source media="(max-width: 768px)" srcset="img/Aurora-tablet.jpg">
             <img src="img/Aurora-desctop.jpg" alt="Льдины в воде и туман" width="260" height="386">
           </picture>
+          <h3>Круиз "Аврора"</h3>
           <div class="directions-wrapper__info">
-            <h3>Круиз "Аврора"</h3>
             <h4>Маршрут</h4>
             <p>Аргентина - Антарктида - Чили</p>
             <h4>Порт отправления</h4>
@@ -202,8 +203,8 @@
             <source media="(max-width: 768px)" srcset="img/Leonor-tablet.jpg">
             <img src="img/Leonor-desctop.jpg" alt="Корабль среди заснеженых гор, в небе облачно" width="260" height="386">
           </picture>
+          <h3>Круиз "Леонор"</h3>
           <div class="directions-wrapper__info">
-            <h3>Круиз "Леонор"</h3>
             <h4>Маршрут</h4>
             <p>Чили - Южная Георгия - Антарктида - Аргентина</p>
             <h4>Порт отправления</h4>
@@ -221,8 +222,8 @@
             <source media="(max-width: 768px)" srcset="img/Minion-tablet.jpg">
             <img src="img/Minion-desctop.jpg" alt="Вдалеке много людей, а также вода и горы" width="260" height="386">
           </picture>
+          <h3>Круиз "Минион - 1"</h3>
           <div class="directions-wrapper__info">
-            <h3>Круиз "Минион - 1"</h3>
             <h4>Маршрут</h4>
             <p>Аргентина - Антарктида</p>
             <h4>Порт отправления</h4>
@@ -246,19 +247,19 @@
         <form class="booking-wrapper__feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="booking-wrapper__feedback-fieldset">
             <legend class="booking-wrapper__feedback-text">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</legend>
-            <label for="user-name" name="user-name">
-              <input type="text" name="user-name" value="" id="user-name" placeholder="Валерия" minlength="2" maxlength="15" required="">
+            <label for="user-name" name="user-name" aria-label="user-name">
+              <input type="text" value="" id="user-name" placeholder="Валерия" minlength="2" maxlength="15" required="">
             </label>
-            <label for="user-phone" name="user-phone">
-              <input type="tel" name="user-phone" value="" id="user-phone" placeholder="89236889975" minlength="11" maxlength="11" required="">
+            <label for="user-phone" name="user-phone" aria-label="user-phone">
+              <input type="tel" value="" id="user-phone" placeholder="89236889975" minlength="11" maxlength="11" required="">
             </label>
-            <label for="user-name" name="user-mail">
-              <input type="email" name="user-mail" value="" id="user-mail" placeholder="grishaewa.lera@gmail.com" required="">
+            <label for="user-name" name="user-mail" aria-label="user-phone">
+              <input type="email" value="" id="user-mail" placeholder="grishaewa.lera@gmail.com" required="">
             </label>
           </fieldset>
           <fieldset class="booking-wrapper__feedback-fieldset-checkbox">
-            <label for="user-consent" name="user-consent-checkbox">
-              <input type="checkbox" name="user-consent" value="" id="user-consent" required="">
+            <label for="user-consent" name="user-consent-checkbox" aria-label="user-checkbox">
+              <input type="checkbox" value="" id="user-consent" required="">
             </label>
             <span>Я согласен на обработку моих персональных данных</span>
           </fieldset>
