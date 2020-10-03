@@ -1,22 +1,20 @@
 .contacts-wrapper {
   display: flex;
   max-width: 1366px;
-  width: 1255px;
+  width: 100%;
   flex-direction: row;
   justify-content: space-around;
   margin: 0 auto;
   padding-top: 120px;
   padding-bottom: 120px;
-  padding-left: 72px;
-  padding-right: 39px;
+  padding-left: 52px;
+  padding-right: 5px;
 }
 
 .contacts-wrapper__elem-map {
   display: block;
   width: 560px;
   height: 306px;
-  margin-right: 65px;
-  margin-left: 15px;
 
   & iframe {
     width: 100%;
@@ -34,8 +32,8 @@
   & h3 {
     display: flex;
     padding-right: 30px;
-    margin-top: 23px;
-    margin-bottom: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -45,7 +43,8 @@
   }
 
   & p {
-    margin-top: 13px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -61,7 +60,7 @@
   }
 
   & a {
-    margin-top: 5px;
+    margin-top: 9px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

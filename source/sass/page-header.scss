@@ -1,13 +1,24 @@
 .page-header {
   display: flex;
-  max-width: 1366px;
   width: 100%;
   flex-direction: column;
   justify-content: space-around;
   margin: 0 auto;
+
   background-image: url("../img/preview-desctop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 100% 100%;
+}
+
+.page-header__center {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-left: 99px;
+  padding-top: 28px;
+  padding-right: 70px;
+  padding-bottom: 279px;
 }
 
 .page-header__wrapper {
@@ -18,17 +29,19 @@
   max-width: 1366px;
   margin: 0 auto;
   width: 100%;
+
 }
 
 .page-header__preview {
-  display: block;
-  width: 637px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding-left: 198px;
-  padding-right: 530px;
+  padding-left: 100px;
+  padding-right: 70px;
   padding-top: 197px;
-  padding-bottom: 259px;
   color: $header-color;
 
   & h2 {
@@ -53,9 +66,6 @@
   display: block;
   width: 77px;
   height: 38px;
-  padding-left: 103px;
-  padding-top: 35px;
-  margin-right: auto;
   cursor: pointer;
 }
 

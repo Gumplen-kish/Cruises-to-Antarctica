@@ -1,8 +1,4 @@
 .page-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  max-width: 1366px;
   width: 100%;
   min-height: 138px;
   margin: 0 auto;
@@ -10,31 +6,40 @@
   background-size: cover;
 }
 
+.page-footer__center {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 68px;
+  padding-bottom: 30px;
+}
+
 .page-footer__nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding-left: 85px;
-  padding-right: 120px;
+  justify-content: flex-start;
+  width: 60%;
 }
 
 .page-footer__nav-list {
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .page-footer__nav-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-right: 33px;
+  display: block;
 }
 
 .page-footer__nav-item-elem {
@@ -59,9 +64,8 @@
   display: block;
   width: 77px;
   height: 38px;
-  margin-right: 37px;
-  padding-top: 50px;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 //Социальные сети
@@ -69,8 +73,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 110px;
-  padding-right: 52px;
 }
 
 .page-footer__social-list {

@@ -1,7 +1,6 @@
 .booking-wrapper {
   display: flex;
   min-height: 555px;
-  max-width: 1366px;
   margin: 0 auto;
   width: 100%;
   flex-direction: row;
@@ -18,7 +17,7 @@
   justify-content: center;
   flex-wrap: wrap;
   background-color: transparent;
-  padding-right: 145px;
+  margin-right: 145px;
 
   & h3 {
     margin-top: 10px;
