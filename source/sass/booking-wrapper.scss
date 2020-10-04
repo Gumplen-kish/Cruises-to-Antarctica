@@ -120,24 +120,18 @@
   letter-spacing: 1.23px;
 }
 
-
 .booking-wrapper__feedback-fieldset-checkbox {
   margin: 0;
   padding: 0;
   border-style: none;
   margin-bottom: 34px;
 
-  & input:checked + & label > svg {
-    display: block;
-  }
+  & label {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
 
-  & input {
-    display: none;
-  }
-
-  & span {
-    margin-top: 0;
-    margin-left: 24px;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -145,24 +139,26 @@
     /* or 13px */
     color: $header-color;
     letter-spacing: 0.64px;
-  }
-
-  & label {
-    position: relative;
-    width: 18px;
-    height: 18px;
-    margin-top: 0;
+    margin-left: 24px;
 
     &::before {
       position: absolute;
+      top: 50%;
       content: "";
-      top: 0;
-      left: 0;
-      display: block;
+      display: flex;
+      left: -24px;
+      transform: translateY(-50%);
       width: 18px;
       height: 18px;
+      align-items: center;
+      justify-content: center;
       background-color: $header-color;
       cursor: pointer;
+    }
+
+    & svg {
+      display: none;
+      fill: transparent;
     }
 
     &:hover {
@@ -178,16 +174,19 @@
       color: $link-hover;
       cursor: pointer;
     }
+  }
 
-    & svg {
-      position: absolute;
-      content:"";
-      top: 50%;
-      left: 50%;
-      display: block;
-      width: 12px;
-      height: 8px;
-      fill: transparent;
+  & input {
+    display: none;
+
+    &:checked + label {
+      & svg {
+        position: absolute;
+        z-index: 1;
+        left: -21px;
+        fill: transparent;
+        display: block;
+      }
     }
   }
 }
@@ -247,7 +246,6 @@
     align-items: center;
     margin-right: 0;
     margin-bottom: 32px;
-
 
     & h3 {
       margin-bottom: 5px;

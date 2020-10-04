@@ -118,7 +118,6 @@
     display: flex;
     width: 320px;
     height: 298px;
-    background-color: $background-menu;
 
     & a {
       font-weight: 500;
@@ -140,7 +139,7 @@
   }
 
   .main-nav--opened .main-nav__toggle {
-    top: 6px;
+    top: 7px;
     right: 25px;
 
     &::before,
