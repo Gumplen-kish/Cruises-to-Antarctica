@@ -16,7 +16,7 @@
   max-width: 1366px;
   margin: 0 auto;
   padding-left: 99px;
-  padding-top: 28px;
+  padding-top: 35px;
   padding-right: 70px;
   padding-bottom: 279px;
 }
@@ -26,7 +26,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 1366px;
   margin: 0 auto;
   width: 100%;
 
@@ -81,10 +80,10 @@
 
   .page-header__center {
     max-width: 768px;
-
-    padding-bottom: 258px;
+    padding-top: 21px;
+    padding-bottom: 225px;
     padding-left: 25px;
-    padding-right: 0;
+    padding-right: 11px;
   }
 
   .page-header__preview {
@@ -93,6 +92,10 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0;
+    padding-left: 21px;
+    padding-right: 70px;
+    padding-top: 209px;
+    padding-bottom: 50px;
 
     & h2 {
       font-size: 50px;
@@ -120,9 +123,17 @@
 
 @media (max-width: $mobile) {
   .page-header {
-    max-width: 320px;
     width: 100%;
     background-image: url("../img/preview-mobile.jpg");
+  }
+
+  .page-header__center {
+    max-width: 320px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .page-header__wrapper {
@@ -132,8 +143,6 @@
   .page-header__logo {
     width: 42px;
     height: 22px;
-    padding-left: 15px;
-    padding-top: 20px;
 
     & svg {
       width: 42px;
@@ -147,14 +156,13 @@
 
   .page-header__preview {
     max-width: 320px;
+    display: block;
     width: 95%;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding-top: 134px;
+
+    padding-top: 124px;
     padding-bottom: 163px;
-    padding-left: 15px;
-    padding-right: 0;
-    margin: 0;
+    padding-left: 0px;
+    padding-right: 40px;
 
     & h2 {
       font-size: 36px;

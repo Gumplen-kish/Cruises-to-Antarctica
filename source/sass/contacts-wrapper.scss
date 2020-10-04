@@ -27,17 +27,14 @@
 }
 
 .contacts-wrapper__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 550px;
-  padding-bottom: 20px;
+  display: block;
+  width: 552px;
 
   & h3 {
     display: flex;
     padding-right: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 76px;
+    margin-bottom: 26px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -48,7 +45,7 @@
 
   & p {
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -81,28 +78,34 @@
 
 @media (max-width: $table) {
   .contacts-wrapper {
-    width: 730px;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     margin: 0;
-    padding-right: 0;
+  }
+
+  .contacts-wrapper__center {
+    max-width: 768px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 45px;
     padding-bottom: 98px;
     padding-top: 102px;
-    padding-left: 30px;
+    padding-left: 45px;
   }
 
   .contacts-wrapper__elem-map {
-    margin-right: 30px;
-    width: 832px;
+    width: 324px;
     height: 335px;
   }
 
   .contacts-wrapper__info {
+    width: 324px;
     padding-top: 0;
 
     & h3 {
-      margin-top: 10px;
-      margin-bottom: 30px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-right: 0;
     }
 
     & p {
@@ -125,13 +128,23 @@
 
 @media (max-width: $mobile) {
   .contacts-wrapper {
+    width: 100%;
+  }
+
+  .contacts-wrapper__center {
     max-width: 320px;
-    width: 290px;
+    margin: 0 auto;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 79px;
-    padding-top: 49px;
+    padding-bottom: 100px;
+    padding-top: 58px;
+  }
+
+  .contacts-wrapper__info {
+    width: 100%;
 
     & h3 {
       padding-right: 15px;

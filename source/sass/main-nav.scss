@@ -48,8 +48,18 @@
 }
 
 @media (max-width: $table) {
+  .main-nav {
+    width: 73%;
+  }
+
   .main-nav__list {
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .main-nav__item {
+    flex-wrap: nowrap;
+    padding-right: 23px;
   }
 
   .main-nav__item-elem {
@@ -70,8 +80,8 @@
 
   .main-nav__toggle {
     position: absolute;
-    top: 18px;
-    right: 27px;
+    top: 8px;
+    right: 12px;
     z-index: 2;
     display: block;
     width: 24px;
@@ -98,6 +108,10 @@
     &:active {
       background-color: #ffffff;
     }
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
   }
 
   .main-nav--opened {
