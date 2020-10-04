@@ -1,15 +1,6 @@
 .directions-wrapper {
-  display: flex;
-  max-width: 1366px;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
-  padding-top: 108px;
-  padding-bottom: 90px;
-  padding-left: 103px;
-  padding-right: 103px;
 
   & h2 {
     margin-bottom: 51px;
@@ -21,6 +12,20 @@
     /* or 42px */
     letter-spacing: 1.7px;
   }
+}
+
+.directions-wrapper__center {
+  display: flex;
+  max-width: 1366px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 108px;
+  padding-bottom: 90px;
+  padding-left: 103px;
+  padding-right: 103px;
 }
 
 .directions-wrapper__list {
@@ -40,37 +45,19 @@
   margin-bottom: 30px;
   color: $header-color;
 
-  &:hover picture {
-    z-index: 1
-  }
-
-  &:hover h3 {
-    top: 0;
-    left: 25px;
-    z-index: -2;
-  }
-
-  & h3 {
-    position: absolute;
-    content: "";
-    bottom: 21px;
-    left: 32px;
-    display: block;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 150%;
-    /* or 27px */
-    letter-spacing: 1.3px;
-  }
-
   &:hover p,
   &:hover h4 {
     display: block;
   }
 
+  &:hover h3 {
+    margin-top: 0;
+  }
+
   &:hover .direction-wrapper__info-details {
     background-color: $black-color;
+    padding-bottom: 35px;
+    padding-left: 25px;
   }
 
   &:hover .directions-wrapper__info-button {
@@ -89,12 +76,22 @@
   flex-direction: column;
   justify-content: center;
   padding-top: 35px;
-  padding-left: 25px;
+  padding-left: 32px;
   padding-right: 25px;
-  padding-bottom: 35px;
+  padding-bottom: 22px;
   background-color: transparent;
   opacity: 1;
   z-index: 0;
+
+  & h3 {
+    margin-top: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+    letter-spacing: 1.3px;
+  }
 
   & h4 {
     margin-top: 0;
@@ -120,13 +117,21 @@
     letter-spacing: 1px;
     display: none;
   }
-
-
 }
 
 .directions-wrapper__info-button {
-  @extend%button-to-book;
   display: none;
+  width: 210px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
+  background-color: $header-color;
+  letter-spacing: 0.85px;
+  border-style: none;
+  cursor: pointer;
 
   &:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);

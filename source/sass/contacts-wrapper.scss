@@ -1,14 +1,18 @@
 .contacts-wrapper {
+  width: 100%;
+}
+
+.contacts-wrapper__center {
   display: flex;
   max-width: 1366px;
   width: 100%;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 auto;
   padding-top: 120px;
   padding-bottom: 120px;
-  padding-left: 52px;
-  padding-right: 5px;
+  padding-left: 103px;
+  padding-right: 53px;
 }
 
 .contacts-wrapper__elem-map {
