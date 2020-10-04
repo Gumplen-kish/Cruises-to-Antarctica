@@ -63,6 +63,19 @@
     /* or 27px */
     letter-spacing: 1.3px;
   }
+
+  &:hover p,
+  &:hover h4 {
+    display: block;
+  }
+
+  &:hover .direction-wrapper__info-details {
+    background-color: $black-color;
+  }
+
+  &:hover .directions-wrapper__info-button {
+    display: block;
+  }
 }
 
 .direction-wrapper__info-details {
@@ -70,17 +83,17 @@
   content: "";
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 260px;
-  height: 386px;
   padding-top: 35px;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 35px;
-  background-color: $black-color;
-  opacity: 0;
+  background-color: transparent;
+  opacity: 1;
   z-index: 0;
 
   & h4 {
@@ -92,6 +105,7 @@
     line-height: 140%;
     /* or 20px */
     letter-spacing: 1.3px;
+    display: none;
   }
 
   & p {
@@ -104,15 +118,15 @@
     /* or 20px */
     color: $text-item;
     letter-spacing: 1px;
+    display: none;
   }
 
-  &:hover {
-    opacity: 1;
-  }
+
 }
 
 .directions-wrapper__info-button {
   @extend%button-to-book;
+  display: none;
 
   &:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);

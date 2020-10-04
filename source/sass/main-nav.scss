@@ -48,17 +48,8 @@
 }
 
 @media (max-width: $table) {
-  .main-nav__wrapper {
-    padding-top: 22px;
-    padding-right: 23px;
-  }
-
   .main-nav__list {
     justify-content: space-around;
-  }
-
-  .main-nav__item {
-    padding-right: 23px;
   }
 
   .main-nav__item-elem {
