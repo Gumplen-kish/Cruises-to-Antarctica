@@ -133,6 +133,12 @@
     padding-bottom: 16px;
     padding-left: 15px;
     padding-right: 15px;
+
+    &--opened {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+    }
   }
 
   .page-header__wrapper {
@@ -142,7 +148,13 @@
     max-height: 301px;
 
     &--opened {
+      flex-direction: column;
       background-color: $background-menu;
+      max-height: 299px;
+      padding-top: 20px;
+      padding-bottom: 16px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 
@@ -156,7 +168,7 @@
     }
 
     &--opened {
-      display: none;
+      stroke: $black-color;
     }
   }
 
@@ -168,6 +180,10 @@
     padding-bottom: 163px;
     padding-left: 0;
     padding-right: 40px;
+
+    &--opened {
+      padding-left: 15px;
+    }
 
     & h2 {
       font-size: 36px;
