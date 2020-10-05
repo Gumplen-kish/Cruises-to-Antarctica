@@ -9,7 +9,7 @@ navToggle.addEventListener('click', function () {
     navWrapper.classList.remove('main-nav--closed');
     navWrapper.classList.add('main-nav--opened');
   } else {
-    navWrapper.classList.add('page-header--closed');
-    navWrapper.classList.remove('page-header--opened');
+    navWrapper.classList.add('main-nav--closed');
+    navWrapper.classList.remove('main-nav--opened');
   }
 });

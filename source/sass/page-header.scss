@@ -140,6 +140,10 @@
     align-items: flex-start;
     width: 100%;
     max-height: 301px;
+
+    &--opened {
+      background-color: $background-menu;
+    }
   }
 
   .page-header__logo {
