@@ -7,6 +7,9 @@ var pageLogo = document.querySelector('.page-header__logo');
 var pagePreview = document.querySelector('.page-header__preview');
 
 navWrapper.classList.remove('main-nav--nojs');
+pageLogo.classList.remove('page-header__logo--nojs');
+pageWrapper.classList.remove('page-header__wrapper--nojs');
+pageCenter.classList.remove('page-header__center--nojs');
 
 navToggle.addEventListener('click', function () {
   if (navWrapper.classList.contains('main-nav--closed')) {
