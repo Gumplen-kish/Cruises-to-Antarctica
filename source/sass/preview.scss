@@ -64,6 +64,11 @@
     padding-left: 45px;
     padding-right: 45px;
     padding-bottom: 91px;
+
+    & picture img {
+      width: 324px;
+      height: 264px;
+    }
   }
 
   .preview-wrapper {
@@ -96,6 +101,11 @@
     padding-left: 15px;
     padding-bottom: 65px;
     padding-right: 15px;
+
+    & picture img {
+      width: 290px;
+      height: 186px;
+    }
   }
 
   .preview-wrapper {

@@ -129,7 +129,7 @@
   }
 
   .advantages-wrapper__center {
-    max-width: 768px;
+    max-width: 767px;
     width: 100%;
     margin: 0 auto;
     padding-bottom: 100px;
@@ -215,7 +215,7 @@
 
 @media (max-width: $mobile) {
   .advantages-wrapper {
-    max-width: 320px;
+    max-width: 767px;
     width: 100%;
     background-image: url("../img/background-of-advantages-mobile.jpg");
 
