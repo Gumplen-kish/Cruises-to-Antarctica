@@ -5,6 +5,11 @@
   background-position: 100% 100%;
   text-align: center;
   color: $black-color;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/background-of-advantages-desctop\(2x\).jpg");
+  }
 }
 
 .advantages-wrapper__center {
@@ -116,6 +121,11 @@
 @media (max-width: $table) {
   .advantages-wrapper {
     background-image: url("../img/background-of-advantages-tablet.jpg");
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/background-of-advantages-tablet\(2x\).jpg");
+    }
   }
 
   .advantages-wrapper__center {
@@ -208,6 +218,11 @@
     max-width: 320px;
     width: 100%;
     background-image: url("../img/background-of-advantages-mobile.jpg");
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/background-of-advantages-mobile\(2x\).jpg");
+    }
   }
 
   .advantages-wrapper__center {

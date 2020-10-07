@@ -3,6 +3,11 @@
   background-image: url("../img/booking-background-desctop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/booking-background-desctop\(2x\).jpg");
+  }
 }
 
 .booking-wrapper__center {
@@ -226,6 +231,11 @@
   .booking-wrapper {
     width: 100%;
     background-image: url("../img/booking-background-tablet.jpg");
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking-background-tablet\(2x\).jpg");
+    }
   }
 
   .booking-wrapper__center {
@@ -268,6 +278,11 @@
   .booking-wrapper {
     width: 100%;
     background-image: url("../img/booking-background-mobile.jpg");
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking-background-mobile\(2x\).jpg");
+    }
   }
 
   .booking-wrapper__center {

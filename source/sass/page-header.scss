@@ -9,6 +9,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 100%;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/preview-desctop\(2x\).jpg");
+  }
 }
 
 .page-header__center {
@@ -75,6 +80,11 @@
 @media (max-width: $table) {
   .page-header {
     background-image: url("../img/preview-tablet.jpg");
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/preview-tablet\(2x\).jpg");
+    }
   }
 
   .page-header__center {
@@ -124,6 +134,11 @@
   .page-header {
     width: 100%;
     background-image: url("../img/preview-mobile.jpg");
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/preview-mobile\(2x\).jpg");
+    }
   }
 
   .page-header__center {
@@ -187,7 +202,7 @@
       stroke: $black-color;
     }
 
-    &--nojs{
+    &--nojs {
       stroke: $black-color;
     }
   }
