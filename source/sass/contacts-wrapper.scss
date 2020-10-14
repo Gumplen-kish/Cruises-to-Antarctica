@@ -86,7 +86,7 @@
     max-width: 768px;
     margin: 0 auto;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-right: 45px;
     padding-bottom: 98px;
     padding-top: 102px;
@@ -101,10 +101,11 @@
   .contacts-wrapper__info {
     width: 324px;
     padding-top: 0;
+    margin-top: 64px;
 
     & h3 {
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 28px;
       padding-right: 0;
     }
 
